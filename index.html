@@ -13,6 +13,26 @@
         <title>Natours | Tours emocionantes para aventureiros</title>
     </head>
     <body>
+
+        <div class="navigation">
+            <input type="checkbox" name="menu" id="navi-toggle" class="navigation__checkbox">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Sobre Natours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Seus beneficios</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Tours populares</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Historias</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Reserve agora</a></li>
+                </ul>
+            </nav>
+        </div>
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -96,7 +116,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">Tours mais populares</h2>
                 </div>
@@ -126,7 +146,7 @@
                                         <p class="card__price-only">Somente</p>
                                         <p class="card__price-value">$1200</p>
                                     </div>
-                                    <a href="#" class="btn btn-white">Reserve agora!</a>
+                                    <a href="#popup" class="btn btn-white">Reserve agora!</a>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +176,7 @@
                                         <p class="card__price-only">Somente</p>
                                         <p class="card__price-value">$2000</p>
                                     </div>
-                                    <a href="#" class="btn btn-white">Reserve agora!</a>
+                                    <a href="#popup" class="btn btn-white">Reserve agora!</a>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +206,7 @@
                                         <p class="card__price-only">Somente</p>
                                         <p class="card__price-value">$3500</p>
                                     </div>
-                                    <a href="#" class="btn btn-white">Reserve agora!</a>
+                                    <a href="#popup" class="btn btn-white">Reserve agora!</a>
                                 </div>
                             </div>
                         </div>
@@ -219,7 +239,7 @@
                             </figcaption>
                         </figure>
                         <div class="story__text">
-                            <h3 class="heading__tertiary u-margin-bottom-small">Eu tiver a melhor semana com minha familia</h3>
+                            <h3 class="heading__tertiary u-margin-bottom-small">Eu tive a melhor semana com minha familia</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro amet nisi, pariatur deleniti alias 
                                 corporis similique enim obcaecati eveniet magni perferendis velit, consequuntur rerum ab neque ea 
                                 labore voluptatem! Maiores corporis similique enim obcaecati eveniet magni perferendis velit, 
@@ -248,6 +268,91 @@
                         <a href="" class="btn-text">Leia todas histórias</a>
                     </div>
             </section>
+            <section class="section-book">
+                <div class="row">
+                    <div class="book">
+                        <div class="book__form">
+                            <form action="#" class="form">
+                                <div class="u-center-text u-margin-bottom-medium">
+                                    <h2 class="heading-secondary">Reserve agora mesmo</h2>
+                                </div>
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Nome completo" id="name" required>
+                                    <label for="name" class="form__label">Nome completo</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="email" class="form__input" placeholder="E-mail" id="email" required>
+                                    <label for="email" class="form__label">Nome completo</label>
+                                </div>
+
+                                <div class="form__group u-margin-bottom-medium">
+                                    <div class="form__radio-group">
+                                        <input type="radio" class="form__radio-input" id="small" name="size">
+                                        <label for="small" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            Grupo pequeno
+                                        </label>
+                                    </div>
+                                    <div class="form__radio-group">
+                                        <input type="radio" class="form__radio-input" id="large" name="size">
+                                        <label for="large" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            Grupo grande
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <button class="btn btn-green">Próximo passo</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Compania</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Contato</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Carreiras</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Politica de privacidade</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Termos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt voluptatem dolor ex illo maiores 
+                        blanditiis, dicta molestias quasi quisquam! Excepturi exercitationem minus incidunt libero? Eligendi debitis 
+                        voluptates necessitatibus dolorem.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-medium">Reserve agora mesmo</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Importante &ndash; Por favor leia os termos antes de fazer sua reserva</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eu sem integer vitae justo eget magna fermentum iaculis. Vitae proin sagittis nisl rhoncus. Cras pulvinar mattis nunc sed blandit. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Rhoncus mattis rhoncus urna neque viverra justo nec. Et ultrices neque ornare aenean euismod elementum nisi quis. Arcu felis bibendum ut tristique et egestas quis. Enim nulla aliquet porttitor lacus.
+                    </p>
+                    <a href="" class="btn btn-green">Reserva agora</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
